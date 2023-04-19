@@ -1,5 +1,6 @@
 # test
 1
+2
 ## Project setup
 ```
 npm install
