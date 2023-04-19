@@ -17,7 +17,7 @@ RUN npm install --registry=https://registry.npm.taobao.org
 RUN npm run build
 
 # nginx 配置文件
-FROM nginx:stable-apline as production-stage
+FROM nginx:stable-alpine as production-stage
 
 COPY --from=build-stage /app/dist /usr/share/ngnix/html
 
