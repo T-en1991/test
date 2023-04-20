@@ -22,7 +22,7 @@ FROM nginx:stable-alpine as production-stage
 COPY --from=build-stage /app/dist /usr/share/ngnix/html
 
 # 端口
-EXPOSE 11006
+EXPOSE 80
 
 # 启动 nginx
 CMD ["nginx", "-g", "daemon off;"]
