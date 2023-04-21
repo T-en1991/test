@@ -55,5 +55,3 @@ EXPOSE 80
 # 启动 nginx
 CMD ["nginx", "-g", "daemon off;"]
 
-# 删除 build-stage 镜像
-RUN docker image rm build-stage
